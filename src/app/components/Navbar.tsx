@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
-            className="text-white focus:outline-none"
+            className="text-purple-800 focus:outline-none"
           >
             {isMobileMenuOpen ? (
               <FaTimes className="w-6 h-6" />
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Links */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-blue-800">
+        <div className="md:hidden bg-[#010155] text-white">
           <div className="flex flex-col space-y-4 p-6">
             <a
               href="#home"
@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
             </a>
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
             >
               Book Now
             </button>
