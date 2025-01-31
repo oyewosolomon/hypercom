@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -77,9 +78,11 @@ const Testimonials: React.FC = () => {
               transition={{ duration: 0.5 }}
               className="bg-gray-50 p-8 rounded-lg text-center max-w-2xl mx-auto"
             >
-              <img
+              <Image
                 src={testimonials[activeIndex].logo}
                 alt={testimonials[activeIndex].name}
+                width={100}
+                height={100}
                 className="w-24 h-24 mx-auto mb-6 rounded-full"
               />
               <p className="text-gray-700 mb-6">

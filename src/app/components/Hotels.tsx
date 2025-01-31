@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { FiFilter, FiStar } from 'react-icons/fi';
+import { FiStar } from 'react-icons/fi';
 import { BsFillBookmarkFill } from 'react-icons/bs';
 
 const locations = [
