@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -103,14 +104,14 @@ const Testimonials: React.FC = () => {
             className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#1A184B] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
             aria-label="Previous"
           >
-            &lt;
+            <FaArrowLeft/>
           </button>
           <button
             onClick={goToNext}
             className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#1A184B] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
             aria-label="Next"
           >
-            &gt;
+           <FaArrowRight/>
           </button>
         </div>
 
