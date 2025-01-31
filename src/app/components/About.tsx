@@ -2,12 +2,12 @@ import React from 'react';
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" id='about'>
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Column: Text Content */}
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-4xl font-bold text-blue-600 mb-6">
+            <h2 className="text-4xl font-bold text-[#010155] mb-6">
               Who We Are
             </h2>
             <p className="text-lg text-gray-700 mb-6">
@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
             </p>
             <a
               href="#learn-more"
-              className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-[#010155] text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Learn More About Us
             </a>
