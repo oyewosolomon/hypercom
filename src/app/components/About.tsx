@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs: React.FC = () => {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Column: Text Content */}
           <div className="md:w-1/2 mb-8 md:mb-0">

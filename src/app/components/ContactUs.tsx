@@ -3,10 +3,10 @@ import React from 'react';
 const ContactUs: React.FC = () => {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-blue-600 mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-bold text-[#010155] mb-4">Contact Us</h2>
           <p className="text-lg text-gray-700">
             We’d love to hear from you! Get in touch with us for any inquiries or support.
           </p>
@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your name"
                   required
                 />
@@ -38,7 +38,7 @@ const ContactUs: React.FC = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your email"
                   required
                 />
@@ -51,7 +51,7 @@ const ContactUs: React.FC = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter the subject"
                   required
                 />
@@ -64,14 +64,14 @@ const ContactUs: React.FC = () => {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your message"
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+                className="w-full bg-[#010155] text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
               >
                 Send Message
               </button>
@@ -80,7 +80,7 @@ const ContactUs: React.FC = () => {
 
           {/* Company Details */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-600 mb-6">
+            <h3 className="text-2xl font-bold text-[#010155] mb-6">
               Our Office
             </h3>
             <div className="space-y-6">

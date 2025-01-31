@@ -48,7 +48,10 @@ export default function ExploreWorld() {
 
   return (
     <div className="p-8 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <div className="mb-8">
+        <div className='container max-w-7xl mx-auto px-6'>
+
+       
+      <div className="mb-8 ">
         <h2 className="text-3xl font-bold">Explore the world</h2>
         <div className="flex justify-between gap-4 mt-4">
             <div className='flex gap-4'>
@@ -96,6 +99,7 @@ export default function ExploreWorld() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

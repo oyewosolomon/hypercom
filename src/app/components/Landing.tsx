@@ -10,9 +10,9 @@ const TravelCard = ({
   subtitle: string;
   bgColor: string;
 }) => (
-  <div className={`${bgColor} rounded-3xl p-8 flex flex-col items-center w-full min-h-screen`}>
-    <div className="text-center mb-24">
-      <h2 className="text-[40px] font-bold mb-4 text-navy">{title}</h2>
+  <div className={`${bgColor} rounded-3xl p-8 flex flex-col items-center w-full min-h-[calc(100vh-100px)]`}>
+    <div className="text-center mb-8">
+      <h2 className="text-3xl font-bold mb-4 text-navy">{title}</h2>
       <p className="text-lg text-navy/80">{subtitle}</p>
     </div>
   </div>
@@ -20,14 +20,14 @@ const TravelCard = ({
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="flex items-center justify-between px-8 py-4 bg-white">
+    <div className="min-h-screen  bg-gray-100">
+      <nav className="flex flex-wrap  items-center justify-between px-6 py-4 bg-white h-[64px]">
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold text-purple-600 flex items-center">
+          <Link href="/" className="text-2xl font-bold text-purple-700 flex items-center">
             <span className="text-3xl mr-1">✿</span>
-            Highpercom 
+            Highpercom
           </Link>
-          <div className="ml-16 space-x-8">
+          <div className="hidden md:flex ml-8 space-x-4">
             <Link href="/profile" className="text-gray-600 hover:text-gray-900">
               Profile
             </Link>
@@ -39,11 +39,11 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-center space-x-4">
-          <button className="px-6 py-2 rounded-full border border-gray-300 hover:border-gray-400 text-gray-600 hover:text-gray-900">
+        <div className="flex flex-rows items-center space-x-4 mt-4 md:mt-0">
+          <button className="px-5 py-2 rounded-full border border-gray-300 hover:border-gray-400 text-gray-600 hover:text-gray-900">
             Sign up
           </button>
-          <button className="px-6 py-2 rounded-full bg-navy text-white hover:bg-navy/90 flex items-center">
+          <button className="px-4 py-2 rounded-full border bg-[#1A184B] text-white hover:bg-purple-700 flex items-center">
             Sign in
             <svg
               className="ml-2 w-4 h-4"
@@ -63,8 +63,8 @@ const LandingPage = () => {
         </div>
       </nav>
 
-      <main className="container mx-auto px-8 py-12">
-        <div className="grid grid-cols-2 gap-8">
+      <main className="max-w-7xl mx-auto px-6 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <TravelCard
             title="Flights"
             subtitle="Your Ticket to Adventure: Explore and Book Flights with Ease!"

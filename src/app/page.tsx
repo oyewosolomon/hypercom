@@ -5,6 +5,8 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
+import CarRental from "./components/CarRental";
 
 export default function Home() {
   return (
@@ -13,10 +15,11 @@ export default function Home() {
       <AboutUs/>
       <Services/>
       <ExploreWorld/>
+      <CarRental/>
       <WhyChooseUs/>
       <Testimonials/>
       <ContactUs/>
-
+      <Footer/>
     </>
   );
 }

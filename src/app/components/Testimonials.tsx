@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-blue-600 mb-4">
+          <h2 className="text-4xl font-bold text-[#1A184B] mb-4">
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-700">
@@ -88,7 +88,7 @@ const Testimonials: React.FC = () => {
               <p className="text-gray-700 mb-6">
                 {testimonials[activeIndex].testimonial}
               </p>
-              <h3 className="text-xl font-semibold text-blue-600 mb-2">
+              <h3 className="text-xl font-semibold text-[#1A184B] mb-2">
                 {testimonials[activeIndex].name}
               </h3>
               <p className="text-gray-600">
@@ -100,14 +100,14 @@ const Testimonials: React.FC = () => {
           {/* Navigation Buttons */}
           <button
             onClick={goToPrev}
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-[#1A184B] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
             aria-label="Previous"
           >
             &lt;
           </button>
           <button
             onClick={goToNext}
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#1A184B] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
             aria-label="Next"
           >
             &gt;
@@ -121,7 +121,7 @@ const Testimonials: React.FC = () => {
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`w-3 h-3 rounded-full ${
-                index === activeIndex ? 'bg-blue-600' : 'bg-gray-300'
+                index === activeIndex ? 'bg-[#1A184B]' : 'bg-gray-300'
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
