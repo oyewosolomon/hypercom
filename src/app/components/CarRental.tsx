@@ -112,12 +112,10 @@ const CarRental: React.FC = () => {
               </ul>
               <p className="text-xl font-bold text-[#010155] mb-6">{car.price}</p>
               <div className="flex space-x-4">
-                <button className="bg-[#010155] text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                <button className="bg-[#010155] mx-auto text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
                   Book Now
                 </button>
-                <button className="bg-transparent border border-[#010155] text-[#010155] font-semibold py-2 px-4 rounded-lg hover:bg-[#010155] hover:text-white transition duration-300">
-                  Learn More
-                </button>
+             
               </div>
             </div>
           ))}

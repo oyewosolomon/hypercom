@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
+                  className="w-full px-4 text-gray-700 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your name"
                   required
                 />
@@ -38,7 +38,7 @@ const ContactUs: React.FC = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
+                  className="w-full px-4 py-2 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your email"
                   required
                 />
@@ -51,7 +51,7 @@ const ContactUs: React.FC = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
+                  className="w-full px-4 text-gray-700 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter the subject"
                   required
                 />
@@ -64,7 +64,7 @@ const ContactUs: React.FC = () => {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
+                  className="w-full text-gray-700 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#010155]"
                   placeholder="Enter your message"
                   required
                 ></textarea>

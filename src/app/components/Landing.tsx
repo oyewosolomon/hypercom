@@ -1,12 +1,9 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Navbar from './Navbar';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import { motion, useInView } from 'framer-motion';
 
 interface TravelCardProps {
   title: string;
@@ -20,50 +17,38 @@ const TravelCard: React.FC<TravelCardProps> = ({
   subtitle, 
   bgColor, 
   imageSrc 
-}) => (
-  <div className={`${bgColor} rounded-3xl p-4 flex flex-col w-full min-h-[calc(100vh-100px)]`}>
-    <div className="flex-1 text-center p-4">
-      <h2 className="text-5xl font-extrabold mb-2 text-navy">{title}</h2>
-      <p className="text-lg px-3 pt-5 text-navy/80">{subtitle}</p>
-    </div>
-    <div className="relative w-full h-[60%]">
-      <Image
-        src={imageSrc}
-        alt={`${title} image`}
-        layout="fill"
-        objectFit="cover"
-        className="rounded-full p-5"
-        priority 
-      />
-    </div>
-  </div>
-);
+}) => {
+  const cardRef = useRef(null);
+  const isInView = useInView(cardRef, { once: true, margin: "-100px" });
+
+  return (
+    <motion.div
+      ref={cardRef}
+      className={`${bgColor} rounded-3xl p-4 flex flex-col w-full min-h-[calc(100vh-100px)]`}
+      initial={{ opacity: 0, x: -100 }} // Animate from the left
+      animate={isInView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <div className="flex-1 text-center p-4">
+        <h2 className="text-5xl font-extrabold mb-2 text-navy">{title}</h2>
+        <p className="text-lg px-3 pt-5 text-navy/80">{subtitle}</p>
+      </div>
+      <div className="relative w-full h-[60%]">
+        <Image
+          src={imageSrc}
+          alt={`${title} image`}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-full p-5"
+          priority 
+        />
+      </div>
+    </motion.div>
+  );
+};
 
 const LandingPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const secondCardRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.innerWidth < 768) {
-      gsap.set(secondCardRef.current, {
-        y: '100%',
-        position: 'absolute',
-        top: '0'
-      });
-
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: 'top top',
-        end: '+=200%',
-        scrub: true,
-        pin: true,
-        animation: gsap.to(secondCardRef.current, {
-          y: '0%',
-          ease: 'none'
-        })
-      });
-    }
-  }, []);
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -79,26 +64,37 @@ const LandingPage = () => {
           />
 
           {/* Mobile overlay */}
-          <div 
-            ref={secondCardRef} 
-            className="md:hidden absolute inset-0"
-          >
-            <TravelCard
-              title="Hotel"
-              subtitle="Where Comfort Meets Convenience"
-              bgColor="bg-[#B89CFE]"
-              imageSrc="/assets/hotel.jpg"
-            />
+          <div className="md:hidden absolute inset-0">
+            <motion.div
+              initial={{ x: "100%" }} // Animate from the right
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <TravelCard
+                title="Hotel"
+                subtitle="Where Comfort Meets Convenience"
+                bgColor="bg-[#B89CFE]"
+                imageSrc="/assets/hotel.jpg"
+              />
+            </motion.div>
           </div>
 
           {/* Desktop layout */}
           <div className="hidden md:block">
-            <TravelCard
-              title="Hotel"
-              subtitle="Where Comfort Meets Convenience"
-              bgColor="bg-[#B89CFE]"
-              imageSrc="/assets/hotel.jpg"
-            />
+            <motion.div
+              initial={{ opacity: 0, x: 100 }} // Animate from the right
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <TravelCard
+                title="Hotel"
+                subtitle="Where Comfort Meets Convenience"
+                bgColor="bg-[#B89CFE]"
+                imageSrc="/assets/hotel.jpg"
+              />
+            </motion.div>
           </div>
         </div>
       </main>

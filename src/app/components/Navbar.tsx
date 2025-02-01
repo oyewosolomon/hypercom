@@ -135,7 +135,7 @@ const Navbar: React.FC = () => {
               onClick={() => scrollToSection('contact')}
               className="bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
             >
-              Book Now
+              Sign up
             </button>
           </div>
         </div>
