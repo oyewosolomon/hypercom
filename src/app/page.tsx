@@ -7,11 +7,14 @@ import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import CarRental from "./components/CarRental";
+import HeroSection from "./components/Landing";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
-     <LandingPage/>
+    <Navbar/>
+     <HeroSection/>
       <AboutUs/>
       <Services/>
       <ExploreWorld/>

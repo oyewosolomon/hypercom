@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-          <p className="text-sm text-blue-300">
+          <p className="text-sm text-white">
             &copy; {new Date().getFullYear()} Highpercom Solutions Ltd. All rights reserved.
           </p>
         </div>
