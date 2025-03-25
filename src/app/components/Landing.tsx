@@ -40,7 +40,7 @@ const TravelCard: React.FC<TravelCardProps> = ({
           layout="fill"
           objectFit="cover"
           className="rounded-full p-5"
-          priority 
+          
         />
       </div>
     </motion.div>
