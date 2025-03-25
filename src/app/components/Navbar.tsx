@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="max-w-7xl mx-auto bg-white text-black sticky rounded-xl top-0 z-50">
+    <nav className="max-w-6xl mx-auto text-black rounded-xl top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
           </a>
           <button
             onClick={() => scrollToSection('contact')}
-            className="bg-[#010155] text-white font-semibold py-2 px-6 rounded-lg hover:bg-purple-600 transition duration-300"
+            className="bg-purple-800 text-white font-semibold py-2 px-6 rounded-lg hover:bg-purple-600 transition duration-300"
           >
             Book Now
           </button>

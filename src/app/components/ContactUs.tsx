@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
         {/* Contact Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg">
             <form>
               <div className="mb-6">
                 <label htmlFor="name" className="block text-gray-700 mb-2">
@@ -79,7 +79,7 @@ const ContactUs: React.FC = () => {
           </div>
 
           {/* Company Details */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-[#010155] mb-6">
               Our Office
             </h3>
@@ -89,21 +89,21 @@ const ContactUs: React.FC = () => {
                   Address
                 </h4>
                 <p className="text-gray-600">
-                  123 Global Travel Lane, Suite 456<br />
-                  Worldwide
+                  756 Alagomeji, Yaba Lagos<br />
+                  
                 </p>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-700 mb-2">
                   Phone
                 </h4>
-                <p className="text-gray-600">+1 (123) 456-7890</p>
+                <p className="text-gray-600">+2348067794162</p>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-700 mb-2">
                   Email
                 </h4>
-                <p className="text-gray-600">info@highpercomsolutions.com</p>
+                <p className="text-gray-600">hello@highpercom.co</p>
               </div>
             </div>
 

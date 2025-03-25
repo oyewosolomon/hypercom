@@ -94,7 +94,7 @@ const CarRental: React.FC = () => {
           {filteredCars.map((car) => (
             <div
               key={car.id}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+              className="bg-white p-6 rounded-lg hover:shadow-lg transition duration-300"
             >
               <img
                 src={car.image}

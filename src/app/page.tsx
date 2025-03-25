@@ -1,5 +1,4 @@
 import AboutUs from "./components/About";
-import LandingPage from "./components/Landing";
 import ExploreWorld from "./components/Hotels";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";

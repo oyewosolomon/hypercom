@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#010155] text-white py-12">
+    <footer className="bg-gradient-to-br from-[#f0f4f8] to-[#e6eaf3] text-gray-600 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Quick Links */}
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-          <p className="text-sm text-white">
+          <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} Highpercom Solutions Ltd. All rights reserved.
           </p>
         </div>

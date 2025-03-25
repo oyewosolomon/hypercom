@@ -41,10 +41,10 @@ export default function ExploreWorld() {
   const [selectedFilter, setSelectedFilter] = useState("");
 
   return (
-    <div className="p-4 md:p-8 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="p-4 md:p-8  text-white">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold">Explore the world</h2>
+          <h2 className="text-2xl text-gray-700 md:text-3xl font-bold">Explore the world</h2>
 
           {/* Filters Section */}
           <div className="flex flex-col md:flex-row justify-between gap-4 mt-4">
