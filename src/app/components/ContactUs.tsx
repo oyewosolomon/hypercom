@@ -84,21 +84,7 @@ const ContactUs: React.FC = () => {
               Our Office
             </h3>
             <div className="space-y-6">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-700 mb-2">
-                  Address
-                </h4>
-                <p className="text-gray-600">
-                  756 Alagomeji, Yaba Lagos<br />
-                  
-                </p>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-gray-700 mb-2">
-                  Phone
-                </h4>
-                <p className="text-gray-600">+2348067794162</p>
-              </div>
+             
               <div>
                 <h4 className="text-lg font-semibold text-gray-700 mb-2">
                   Email
